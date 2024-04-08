@@ -1,0 +1,569 @@
+/* INDEX */
+#index {
+    margin: 0;
+    background-image: 
+        /* linear-gradient(rgba(5, 7, 12, 0.75)),
+        rgba(5, 7, 12, 0.75); */
+        url(../imagenes/poder-judicial.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* HEADER*/
+nav {
+    background-color: #000;
+    display: flex;
+    border-top: 5px solid #4eb9ee; 
+}
+
+#logo-nav {
+    padding: 0 10px;
+}
+
+#titulo-nav>p {
+    font-family: "Montserrat", Muli;
+    color: #ffffff;
+    margin: 0;
+    padding-top: 5px;
+}
+
+nav>ul {
+    display: flex;
+    margin: auto 0;
+}
+
+nav>ul li {
+    padding: 18px 25px;
+    list-style: none;
+}
+
+nav>ul>li:hover a {
+    font-size: 0.9em;
+}
+
+nav>ul>li>a {
+    font-family: "Montserrat", Muli;
+    font-size: 0.8em;
+    font-weight: 700;
+    color: #ffffff;
+    text-decoration: none;
+    transition: font-size 0.5s;
+}
+
+nav ul li ul {
+    background-color: #ffffff;
+    display: none;
+    flex-direction: column;
+    margin-top: 15px;
+    padding: 0;
+    position: absolute;
+}
+
+nav ul li:hover ul {
+    display: flex;
+}
+
+nav ul li ul li {
+    padding: 10px 20px;
+}
+
+nav ul li ul li:hover {
+    background-color: #111;
+}
+
+nav ul li ul li a {
+    color: #000000;
+    font-size: 0.5em;
+    font-weight: 300;
+    font-family: Calibri, Muli;
+}
+
+nav ul li ul li:hover a {
+    color: #ffffff;
+}
+
+#titulo-header {
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    font-family: "Montserrat", Muli;
+    padding: 50px;
+}
+
+/* FIN HEADER*/
+
+/* SECTION 1 */
+#lista-desplegable {
+    margin: 0 10px 0 10px;
+    background-color: #006699;
+}
+
+#lista-desplegable>ul {
+    font-family: "Montserrat", Muli;
+    font-size: 18px;
+    padding: 0;
+    list-style: none;
+}
+
+#lista-desplegable>ul>li {
+    padding: 10px 20px;
+    /* padding: 0; */
+    border-color: #026191;
+    border-width: 0.5px;
+    border-style: solid;
+}
+
+#lista-desplegable>ul>li a {
+    color: #fff;
+}
+
+#lista-desplegable>ul>li .desplegable {
+    list-style: none;
+    display: none;
+}
+
+#lista-desplegable>ul>li:hover .desplegable { 
+    display: flex;
+    flex-direction: column;
+}
+
+#lista-desplegable>ul>li:hover li { 
+    color: #fff;
+    list-style: none;
+}
+
+#lista-desplegable>ul>li:hover .desplegable #abogados {
+    width: 100%;
+    color: #fff;
+    /* border-color: #fff;
+    border-style: solid; 
+    border-width: 1px; */
+}
+
+#lista-desplegable>ul>li:hover .desplegable #abogados h3 {
+    text-align: center;
+    width: 100%;
+    font-size: 25px;
+}
+
+#lista-desplegable>ul>li:hover .desplegable #abogados section {
+    padding: 0px 40px;
+}
+
+#lista-desplegable>ul>li:hover .desplegable #abogados .mi-icono {
+    padding: 10px 20px;
+    display: inline-block;
+    font-size: 6.5rem;
+}
+
+#lista-desplegable>ul>li:hover .desplegable #abogados .texto {
+    padding: 20px 20px;
+    display: inline-block;
+    font-size: 15px;
+    text-align: center;
+    margin: 0;
+}
+
+#lista-desplegable>ul>li:hover .desplegable div {
+    color: #fff;
+    text-align: center;
+    padding: 30px;
+}
+
+/* FIN SECTION  1 */
+
+.container {
+    padding: 100px 125px 40px 125px;
+}
+
+.container div {
+    padding: 10px 30px;
+    background-color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    border-radius: 10px;
+    position: relative;
+    width: 8.3%;
+    vertical-align: top;
+}
+
+.container div p {
+    text-align: center;
+}
+
+.container div .icono {
+    font-size: 4.5rem;
+    color: #026191;
+    background-color: #fff;
+    border-radius: 50%;
+    right: 40px;
+    position: absolute;
+    top: -50px;
+    transition: transform 0.5s;
+}
+
+.container div .icono:hover {
+    transform: rotate(360deg);
+}
+
+/* FORMULARIO */
+.formulario {
+    padding: 60px 150px;
+}
+
+.formulario h2 {
+    color: #fff;
+    font-family: "Montserrat", Muli;
+    font-size: 30px;
+}
+
+form {
+    border-radius: 8px;
+    padding: 20px 50px;
+    background-color: #026191;
+    margin: 10px;
+}
+
+.form-label label {
+    color: #fff;
+}
+
+.form-label input {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.form-label textarea {
+    width: 100%;
+    padding: 10px;
+}
+
+form button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #dddddd;
+    color: #000;
+}
+
+form button:hover {
+    background-color: #b3b3b3;
+}
+
+/* FOOTER  */
+footer {
+    background-color: rgba(0,0,0,0.9);
+    padding: 30px 20px 30px 20px;
+    color: #fff;
+    font-family: "Montserrat", Muli;
+}
+
+footer div {
+    display: inline-block;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+footer div span {
+    display: block;
+    font-family: "Montserrat", Muli;
+    font-size: 15px;
+}
+/* FIN FOOTER  */
+
+/* FIN INDEX */
+
+/* NOTICIAS */
+body {
+    margin: 0;
+}
+
+/* HEADER */
+#encabezado-noticias {
+    padding: 10px 0px;
+}
+
+#titulo-noticias {
+    color:#026191;
+    padding: 0 110px;
+    font-size: 20px;
+    display: inline-block;
+}
+
+.rectangulo {
+    background-color: #026191;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 10px;
+    margin: 0 75px;
+    padding: 15px 30px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.8); /* Agrega la sombra */
+}
+
+.rectangulo:hover>a {
+    color: #000;
+    transition: color 0.5s;
+}
+
+.rectangulo a {
+    /* padding: 15px 30px; */
+    color: #fff;
+    font-family: "Montserrat", Muli;
+    /* width: 0; */
+}
+/* FIN HEADER */
+
+/* CUERPO NOTICIAS */
+#cuerpo-noticias {
+    display: flex;
+}
+
+#cuerpo-noticias>div {
+    padding-left: 60px;
+} 
+
+#cuerpo-noticias div aside {
+    padding: 20px 0px;
+    margin: 10px;
+}
+
+
+#cuerpo-noticias div aside h3 {
+    font-size: 21px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#cuerpo-noticias div aside #buscador {
+    display: flex;
+}
+
+#cuerpo-noticias div aside #buscador input {
+    padding: 18px;
+    border-radius: 4px 0 0 4px;
+    background-color: #8d8d8d2d;
+    border: none;
+    width: 100%;
+}
+
+#cuerpo-noticias div aside #buscador button {
+    background-color: #69727D;
+    padding: 15px 20px;
+    border: 0;
+    border-radius: 0 4px 4px 0;
+}
+
+#cuerpo-noticias div aside h3 {
+    color: #025f8d;
+}
+
+#cuerpo-noticias div aside ul {
+    padding-left: 30px;
+    padding-right: 40px;
+}
+
+#cuerpo-noticias div aside ul li {
+    margin-bottom: 10px;
+    list-style: square;
+    color: #025f8d;
+
+}
+
+#cuerpo-noticias div aside ul li a {
+    color: #00334d;
+}
+
+#cuerpo-noticias section {
+    width: 100%;
+    left: 50%;
+}
+
+#cuerpo-noticias .noticia {
+    display: inline-block;
+    width: 28%;
+    padding: 20px;
+    vertical-align: top;
+}
+#cuerpo-noticias .noticia h3 {
+    color: #025f8d;
+}
+
+#cuerpo-noticias .noticia span {
+    color: #025f8d;
+}
+
+#cuerpo-noticias .noticia .imagen {
+    width: 100%;
+    height: 100%;
+}
+/* FIN NOTICIAS */
+
+/* INSITUCIONAL */
+#institucional {
+    background-image: url("../imagenes/institucional.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#institucional div h1 {
+    text-align: center;
+    color: #026191;
+    margin: 0px;
+    padding: 20px;
+}
+
+#cuerpo-insitucional {
+    padding: 0 100px 50px 90px;
+    display: flex;
+}
+
+section .imagen-judicial {
+    vertical-align: top;
+    width: 64%;
+    height: 64%;
+}
+
+section .contenedor {
+    display: inline-block;
+    padding: 0 30px;
+}
+
+    section .contenedor h3 {
+    margin-top: 0;
+    font-family: "Montserrat", Muli;
+    color: #026191;
+    font-size: 15px;
+    font-weight: 800;
+    display: inline;
+}
+
+section .contenedor ul {
+    padding: 10px;
+    margin: 0;
+}
+
+section .contenedor ul>div>p {
+    color: #0478b3;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    display: inline;
+}
+
+section .contenedor ul>div:hover>p {
+    color: #044869;
+    transition: color 0.3s;
+}
+
+section .contenedor ul li p {
+    display: inline;
+}
+
+section .contenedor ul li:hover p {
+    color: #0478b3;
+    transition: color 0.3s;
+}
+
+section .contenedor ul li {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    list-style: none;
+    padding: 10px 15px;
+}
+
+/* BLOG */
+#blog {
+    margin: 0;
+    background-image: url(../imagenes/blog.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#titulo-blog {
+    padding: 0 140px;
+}
+
+#titulo-blog h3 {
+    color: #6EC1E4;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 0;
+}
+
+#blog-noticias div aside ul li a {
+    color: #00334d;
+}
+
+#blog-noticias section {
+    padding: 0 80px;
+}
+
+#blog-noticias .noticia {
+    display: inline-block;
+    width: 21%;
+    padding: 0 60px;
+    vertical-align: top;
+}
+
+#blog-noticias .noticia h3 {
+    color: #025f8d;
+}
+
+#blog-noticias .noticia span {
+    color: #025f8d;
+}
+
+#blog-noticias .noticia .imagen {
+    width: 100%;
+}
+
+#leyes {
+    padding: 100px 0;
+}
+
+#leyes>div {
+    background-color: #006699;
+    margin: 0 80px 30px;
+    padding: 5px;
+    text-align: center;
+}
+
+#leyes>div p {
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#leyes section {
+    margin: 0 80px;
+    /* border-radius: 5px; */
+}
+
+#leyes section>div {
+    border-style: groove;
+    padding: 10px 10px;
+    display: flex;
+}
+
+#leyes section div p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 550;
+    font-size: 14px;
+    /* display: inline; */
+    /* justify-content: center;
+    text-align: center; */
+}
+
+#leyes section div i {
+    padding: 10px 10px;
+    /* height: 100%; */
+}
+
+/* #026191 */
+
+/* transform: scale(1.1) */
+
+/* fa-xs */
