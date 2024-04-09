@@ -71,6 +71,7 @@ nav ul li ul li {
 
 nav ul li ul li:hover {
     background-color: #111;
+    cursor: pointer;
 }
 
 nav ul li ul li a {
@@ -121,6 +122,7 @@ nav ul li ul li:hover a {
 
 #lista-desplegable>ul>li summary {
     color: #fff;
+    cursor: pointer;
 }
 
 #lista-desplegable>ul>li .desplegable {
@@ -193,6 +195,10 @@ nav ul li ul li:hover a {
     vertical-align: top;
 }
 
+.container div:hover {
+    cursor: pointer;
+}
+
 .container div p {
     text-align: center;
 }
@@ -206,6 +212,7 @@ nav ul li ul li:hover a {
     position: absolute;
     top: -50px;
     transition: transform 0.5s;
+    cursor: pointer;
 }
 
 .container div .icono:hover {
@@ -255,6 +262,7 @@ form button {
 
 form button:hover {
     background-color: #b3b3b3;
+    cursor: pointer;
 }
 
 /* FOOTER  */
@@ -310,6 +318,7 @@ body {
 
 .rectangulo:hover {
     transform: scale(1.08);
+    cursor: pointer;
 }
 
 .rectangulo a {
@@ -357,6 +366,7 @@ body {
     padding: 15px 20px;
     border: 0;
     border-radius: 0 4px 4px 0;
+    cursor: pointer;
 }
 
 #cuerpo-noticias div aside h3 {
@@ -372,7 +382,7 @@ body {
     margin-bottom: 10px;
     list-style: square;
     color: #025f8d;
-
+    cursor: pointer;
 }
 
 #cuerpo-noticias div aside ul li a {
@@ -396,6 +406,11 @@ body {
 
 #cuerpo-noticias .noticia span {
     color: #025f8d;
+}
+
+#cuerpo-noticias .noticia span:hover {
+    cursor: pointer;
+    color: #02496d;
 }
 
 #cuerpo-noticias .noticia .imagen {
@@ -437,13 +452,17 @@ section .contenedor {
     padding: 0 30px;
 }
 
-    section .contenedor h3 {
+section .contenedor h3 {
     margin-top: 0;
     font-family: "Montserrat", Muli;
     color: #026191;
     font-size: 15px;
     font-weight: 800;
     display: inline;
+}
+
+section .contenedor h3:hover {
+    cursor: pointer;
 }
 
 section .contenedor ul {
@@ -460,7 +479,8 @@ section .contenedor ul>div>p {
 
 section .contenedor ul>div:hover>p {
     color: #044869;
-    transition: color 0.3s;
+    transition: color 0.2s;
+    cursor: pointer;
 }
 
 section .contenedor ul li p {
@@ -469,7 +489,8 @@ section .contenedor ul li p {
 
 section .contenedor ul li:hover p {
     color: #0478b3;
-    transition: color 0.3s;
+    transition: color 0.2s;
+    cursor: pointer;
 }
 
 section .contenedor ul li {
@@ -520,6 +541,11 @@ section .contenedor ul li {
 
 #blog-noticias .noticia span {
     color: #025f8d;
+}
+
+#blog-noticias .noticia span:hover {
+    cursor: pointer;
+    color: #02496d;
 }
 
 #blog-noticias .noticia .imagen {
