@@ -115,26 +115,30 @@ nav ul li ul li:hover a {
     border-style: solid;
 }
 
-#lista-desplegable>ul>li a {
+/* #lista-desplegable>ul>li a {
+    color: #fff;
+} */
+
+#lista-desplegable>ul>li summary {
     color: #fff;
 }
 
 #lista-desplegable>ul>li .desplegable {
     list-style: none;
-    display: none;
+    /* display: none; */
 }
 
-#lista-desplegable>ul>li:hover .desplegable { 
+#lista-desplegable>ul>li .desplegable { 
     display: flex;
     flex-direction: column;
 }
 
-#lista-desplegable>ul>li:hover li { 
+#lista-desplegable>ul>li li { 
     color: #fff;
     list-style: none;
 }
 
-#lista-desplegable>ul>li:hover .desplegable #abogados {
+#lista-desplegable>ul>li .desplegable #abogados {
     width: 100%;
     color: #fff;
     /* border-color: #fff;
@@ -142,23 +146,23 @@ nav ul li ul li:hover a {
     border-width: 1px; */
 }
 
-#lista-desplegable>ul>li:hover .desplegable #abogados h3 {
+#lista-desplegable>ul>li .desplegable #abogados h3 {
     text-align: center;
     width: 100%;
     font-size: 25px;
 }
 
-#lista-desplegable>ul>li:hover .desplegable #abogados section {
+#lista-desplegable>ul>li .desplegable #abogados section {
     padding: 0px 40px;
 }
 
-#lista-desplegable>ul>li:hover .desplegable #abogados .mi-icono {
+#lista-desplegable>ul>li .desplegable #abogados .mi-icono {
     padding: 10px 20px;
     display: inline-block;
     font-size: 6.5rem;
 }
 
-#lista-desplegable>ul>li:hover .desplegable #abogados .texto {
+#lista-desplegable>ul>li .desplegable #abogados .texto {
     padding: 20px 20px;
     display: inline-block;
     font-size: 15px;
@@ -166,7 +170,7 @@ nav ul li ul li:hover a {
     margin: 0;
 }
 
-#lista-desplegable>ul>li:hover .desplegable div {
+#lista-desplegable>ul>li .desplegable div {
     color: #fff;
     text-align: center;
     padding: 30px;
@@ -205,7 +209,7 @@ nav ul li ul li:hover a {
 }
 
 .container div .icono:hover {
-    transform: rotate(360deg);
+    transform: rotate(10deg) scale(1.2);
 }
 
 /* FORMULARIO */
@@ -284,6 +288,7 @@ body {
 /* HEADER */
 #encabezado-noticias {
     padding: 10px 0px;
+    /* display: flex; */
 }
 
 #titulo-noticias {
@@ -297,21 +302,20 @@ body {
     background-color: #026191;
     border-radius: 5px;
     display: inline-block;
-    padding: 10px;
-    margin: 0 75px;
-    padding: 15px 30px;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.8); /* Agrega la sombra */
+    padding: 15px 25px;
+    margin: 0 79px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.8);
+    transition: transform .3s;
 }
 
-.rectangulo:hover>a {
-    color: #000;
-    transition: color 0.5s;
+.rectangulo:hover {
+    transform: scale(1.08);
 }
 
 .rectangulo a {
     /* padding: 15px 30px; */
     color: #fff;
-    font-family: "Montserrat", Muli;
+    font-family: Arial, Helvetica, sans-serif
     /* width: 0; */
 }
 /* FIN HEADER */
@@ -407,6 +411,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    backdrop-filter: blur(5px); 
 }
 
 #institucional div h1 {
@@ -519,6 +524,11 @@ section .contenedor ul li {
 
 #blog-noticias .noticia .imagen {
     width: 100%;
+    transition: .3s;
+}
+
+#blog-noticias .noticia .imagen:hover {
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
 }
 
 #leyes {
